@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beogo Digital School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header { background-color: #111; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin: 10px 0; font-size: 1.2em; }
+    nav { background: #333; text-align: center; }
+    nav a { color: white; display: inline-block; padding: 15px 20px; text-decoration: none; }
+    nav a:hover { background: #555; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .hero-btn { background: gold; color: black; padding: 15px 25px; text-decoration: none; border-radius: 5px; }
+    .card { background: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    footer { background: #111; color: white; text-align: center; padding: 30px 20px; }
+    .contact p, .contact a { color: white; }
+    form { background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    button { padding: 10px 20px; background-color: #111; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #333; }
+    .social-buttons { margin-top: 20px; }
+    .social-buttons a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .whatsapp { background-color: #25D366; }
+    .telegram { background-color: #0088cc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Beogo Digital School</h1>
+    <p>L’avenir digital vous appartient</p>
+    <a class="hero-btn" href="#formations">Commencer la formation</a>
+  </header>
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#formations">Formations</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about">
+    <h2>À propos</h2>
+    <div class="card">
+      <p><strong>Boureima Kombemba</strong>, entrepreneur burkinabé de 26 ans, expert en finance digitale et fondateur de Beogo Digital School. Sa mission : former des millions de personnes à la crypto, à la blockchain et aux opportunités digitales avec des outils simples comme la Clé Beogo.</p>
+    </div>
+  </section>
+  <section id="formations">
+    <h2>Nos Formations</h2>
+    <div class="card">
+      <h3>Clé Beogo Digital School</h3>
+      <p>Une clé USB 3.0 contenant des formations sur : crypto, blockchain, trading, e-commerce et business digital via smartphone.</p>
+      <a class="hero-btn" href="#contact">Commander</a>
+    </div>
+    <div class="card">
+      <h3>Best-Mindset Club</h3>
+      <p>Des sessions hebdomadaires de motivation et mindset pour former des leaders du digital.</p>
+    </div>
+    <div class="card">
+      <h3>Séminaire SEMES</h3>
+      <p>Séminaire d’enrichissement stratégique pour la génération digitale. Prochaine édition bientôt disponible.</p>
+    </div>
+  </section>
+  <section id="temoignages">
+    <h2>Témoignages</h2>
+    <div class="card">
+      <p>"Grâce à Beogo Digital School, j’ai compris les bases de la crypto en une semaine !"</p>
+      <p>- Un étudiant</p>
+    </div>
+    <div class="card">
+      <p>"La Clé Beogo est la meilleure formation que j’ai reçue sur clé USB. Simple et efficace."</p>
+      <p>- Membre du Best-Mindset Club</p>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><strong>Nom :</strong> Boureima Kombemba</p>
+    <p><strong>Titre :</strong> Expert formateur en finance digitale</p>
+    <p><strong>Adresse :</strong> Ouagadougou, Quartier Wayalguin, près de l’échangeur</p>
+    <p><strong>Réseaux :</strong> Boureima Kombemba / Mister Golden</p>
+    <h3>Envoyez-nous un message</h3>
+    <form action="#" method="post">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="social-buttons">
+      <a class="whatsapp" href="https://wa.me/226XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="telegram" href="https://t.me/GoldenTraderApp" target="_blank"><i class="fab fa-telegram"></i> Bot Telegram</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Beogo Digital School. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
