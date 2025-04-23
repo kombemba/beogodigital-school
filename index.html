@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beogo Digital School</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    body { margin: 0; font-family: Arial, sans-serif; }
     header { background-color: #111; color: white; padding: 40px 20px; text-align: center; }
     header h1 { margin: 0; font-size: 2.5em; }
     header p { margin: 10px 0; font-size: 1.2em; }
@@ -15,14 +14,14 @@
     nav a:hover { background: #555; }
     section { padding: 40px 20px; max-width: 1000px; margin: auto; }
     .hero-btn { background: gold; color: black; padding: 15px 25px; text-decoration: none; border-radius: 5px; }
-    .card { background: #fff; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    .card { background: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
     footer { background: #111; color: white; text-align: center; padding: 30px 20px; }
-    .contact p, .contact a { color: #111; }
-    form { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    .contact p, .contact a { color: white; }
+    form { background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    input, textarea, select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
     button { padding: 10px 20px; background-color: #111; color: white; border: none; border-radius: 5px; cursor: pointer; }
     button:hover { background-color: #333; }
-    .social-buttons { margin-top: 20px; text-align: center; }
+    .social-buttons { margin-top: 20px; }
     .social-buttons a {
       display: inline-block;
       margin: 5px;
@@ -37,27 +36,24 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Beogo Digital School</h1>
     <p>L’avenir digital vous appartient</p>
     <a class="hero-btn" href="#formations">Commencer la formation</a>
   </header>
-
   <nav>
     <a href="#about">À propos</a>
     <a href="#formations">Formations</a>
     <a href="#temoignages">Témoignages</a>
     <a href="#contact">Contact</a>
+    <a href="#commande">Commander</a>
   </nav>
-
   <section id="about">
     <h2>À propos</h2>
     <div class="card">
       <p><strong>Boureima Kombemba</strong>, entrepreneur burkinabé de 26 ans, expert en finance digitale et fondateur de Beogo Digital School. Sa mission : former des millions de personnes à la crypto, à la blockchain et aux opportunités digitales avec des outils simples comme la Clé Beogo.</p>
     </div>
   </section>
-
   <section id="formations">
     <h2>Nos Formations</h2>
     <div class="card">
@@ -74,7 +70,6 @@
       <p>Séminaire d’enrichissement stratégique pour la génération digitale. Prochaine édition bientôt disponible.</p>
     </div>
   </section>
-
   <section id="temoignages">
     <h2>Témoignages</h2>
     <div class="card">
@@ -86,39 +81,46 @@
       <p>- Membre du Best-Mindset Club</p>
     </div>
   </section>
-
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <p><strong>Nom :</strong> Boureima Kombemba</p>
     <p><strong>Titre :</strong> Expert formateur en finance digitale</p>
     <p><strong>Adresse :</strong> Ouagadougou, Quartier Wayalguin, près de l’échangeur</p>
-    <p><strong>Téléphone :</strong> <a href="tel:+22655070881">+226 55 07 08 81</a></p>
-    <p><strong>Bot Telegram :</strong> <a href="https://t.me/Goldsignaltrader_Bot">@Goldsignaltrader_Bot</a></p>
+    <p><strong>Téléphone :</strong> +226 55 07 08 81</p>
     <p><strong>Réseaux :</strong> Boureima Kombemba / Mister Golden</p>
-
-    <h3>Envoyez-nous un message</h3>
-    <form action="#" method="post">
-      <label for="nom">Nom</label>
-      <input type="text" id="nom" name="nom" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Envoyer</button>
-    </form>
-
     <div class="social-buttons">
       <a class="whatsapp" href="https://wa.me/22655070881" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a class="telegram" href="https://t.me/Goldsignaltrader_Bot" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+      <a class="telegram" href="https://t.me/Goldsignaltrader_Bot" target="_blank"><i class="fab fa-telegram"></i> Bot Telegram</a>
     </div>
   </section>
+  <section id="commande">
+    <h2>Commander la Clé Beogo ou une Formation</h2>
+    <div class="card">
+      <form action="https://formsubmit.co/kombembaboureima@gmail.com" method="POST">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required><label for="email">Adresse email</label>
+    <input type="email" id="email" name="email" required>
 
+    <label for="telephone">Téléphone</label>
+    <input type="tel" id="telephone" name="telephone" required>
+
+    <label for="produit">Je veux commander :</label>
+    <select id="produit" name="produit" required>
+      <option value="clé-beogo">Clé Beogo</option>
+      <option value="formation-crypto">Formation Crypto</option>
+      <option value="formation-trading">Formation Trading</option>
+    </select>
+
+    <label for="message">Message complémentaire</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Commander</button>
+  </form>
+</div>
+
+  </section>
   <footer>
     <p>&copy; 2025 Beogo Digital School. Tous droits réservés.</p>
   </footer>
-
 </body>
-</html> 
+</html>
